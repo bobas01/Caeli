@@ -1,0 +1,153 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$txt: 'Seaweed Script', cursive;
+$anecdote: 'Great Vibes', cursive;
+$accoloade: 'Neuton', serif;
+$colorBtn: rgb(22, 60, 38, 0.9);
+$colorBorder: #133322;
+
+p {
+    font-family: $txt;
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, #ffffff, #d8dde7, #aabfcd, #78a3ad, #4b8785, #4b8785, #4b8785, #4b8785, #78a3ad, #aabfcd, #d8dde7, #ffffff);
+    background-clip: text;
+    color: transparent;
+}
+
+.text {
+    width: 70%;
+    margin: 50px auto 0 auto;
+
+}
+
+body {
+    overflow: auto;
+    background-color: #276046;
+}
+
+$header-height: 400px;
+
+header {
+    position: relative;
+    height: $header-height;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+
+    .wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $header-height;
+        z-index: 1;
+
+        #spiral {
+            position: absolute;
+            width: 200px;
+            left: 20%;
+            top: -25%;
+            // animation: wave 2s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+            // transform-origin: center;            
+            z-index: 100;
+        }
+        #fougere, #palmier {
+            width: 400px;
+        }
+        #palmier {
+            position: absolute;
+            right: 0;
+        }
+
+    }
+}
+
+// @keyframes wave {
+//     0% {
+//         transform: scale(1);
+//     }
+
+//     50% {
+//         transform: scale(0.8);
+//     }
+
+//     100% {
+//         transform: scale(1);
+//     }
+// }
+
+
+video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+
+}
+
+
+main {
+
+    position: relative;
+    overflow: auto;
+    background-color: #276046;
+}
+
+.little {
+    font-family: $txt;
+    font-size: 2rem;
+    width: 150px;
+    height: 75px;
+    border: 5px solid $colorBorder;
+    position: absolute;
+    right: 5%;
+    bottom: 55%;
+    background-color: $colorBtn;
+    color: #fff;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.big {
+    overflow: auto;
+    width: 98%;
+    border: 10px solid $colorBorder;
+    margin: 50px auto;
+    background-color: $colorBtn;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+
+
+
+    p {
+        font-family: $anecdote;
+        font-size: 2.5rem;
+        padding: 10px 20px 0 20px;
+        color: #ffffff;
+
+    }
+}

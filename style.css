@@ -1,0 +1,115 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Seaweed Script", cursive;
+  font-size: 2.5rem;
+  background-image: linear-gradient(to right, #ffffff, #d8dde7, #aabfcd, #78a3ad, #4b8785, #4b8785, #4b8785, #4b8785, #78a3ad, #aabfcd, #d8dde7, #ffffff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.text {
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+body {
+  overflow: auto;
+  background-color: #276046;
+}
+
+header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+header .wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+header .wave #spiral {
+  position: absolute;
+  width: 200px;
+  left: 20%;
+  top: -25%;
+  z-index: 100;
+}
+header .wave #fougere, header .wave #palmier {
+  width: 400px;
+}
+header .wave #palmier {
+  position: absolute;
+  right: 0;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main {
+  position: relative;
+  overflow: auto;
+  background-color: #276046;
+}
+
+.little {
+  font-family: "Seaweed Script", cursive;
+  font-size: 2rem;
+  width: 150px;
+  height: 75px;
+  border: 5px solid #133322;
+  position: absolute;
+  right: 5%;
+  bottom: 55%;
+  background-color: rgba(22, 60, 38, 0.9);
+  color: #fff;
+}
+.little:hover {
+  transform: scale(1.1);
+}
+.little:active {
+  transform: scale(0.95);
+}
+
+.big {
+  overflow: auto;
+  width: 98%;
+  border: 10px solid #133322;
+  margin: 50px auto;
+  background-color: rgba(22, 60, 38, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.big p {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  padding: 10px 20px 0 20px;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
