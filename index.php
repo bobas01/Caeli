@@ -20,8 +20,7 @@
             <img id="spiral" src="./img/spiral.svg" alt="spiral">
             <img src="./img/fougere.png" alt="fougère" id="fougere">
             <img src="./img/palmier.png" alt="palmier" id="palmier">
-            
-</div>
+        </div>
     </header>
     <main>
         <section id="slide1">
@@ -30,9 +29,81 @@
                     améliorer la qualité d’air intérieur par la même occasion ?</p>
                 <p>Laissez-vous guider...</p>
             </div>
-            <button class="little" type="button">
+            <button id="btn1" class="little" type="button">
                 Par ici!
             </button>
+            <div class="big">
+                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+            </div>
+
+        </section>
+        <section id="slide2">
+            <div class="text">
+                <h2>Fonctionnement</h2>
+                <p>Ceci est un texte expliquant comment cela fonctionne et ce qu’il va devoir faire pour blablabla Ceci est un texte expliquant comment cela fonctionne et ce qu’il va devoir faire pour blablabla</p>
+
+            </div>
+            <button class="little" id="btn2" type="button">
+                Bien compris!
+            </button>
+            <div class="big">
+                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+            </div>
+
+        </section>
+        <section id="slide3">
+            <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Sol</th>
+                        <th>Murs</th>
+                        <th>Plafond</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr class="first-line">
+                        <td>Gros œuvres</td>
+                        <td>
+                            <select>
+                                <option value="materials1">Matériaux 1</option>
+                                <option value="materials2">Matériaux 2</option>
+                                <option value="materials3">Matériaux 3</option>
+                                <option value="materials4">Matériaux 4</option>
+                                <option value="materials5">Matériaux 5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="materials1">Matériaux 1</option>
+                                <option value="materials2">Matériaux 2</option>
+                                <option value="materials3">Matériaux 3</option>
+                                <option value="materials4">Matériaux 4</option>
+                                <option value="materials5">Matériaux 5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="materials1">Matériaux 1</option>
+                                <option value="materials2">Matériaux 2</option>
+                                <option value="materials3">Matériaux 3</option>
+                                <option value="materials4">Matériaux 4</option>
+                                <option value="materials5">Matériaux 5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button onclick="displaySecondLine()">Valider</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <article id="description">
+                <h2 id="table-title">Gros œuvres</h2>
+                <p id="table-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit rerum numquam. Consectetur ab quidem natus nisi, quos, sequi, tempora placeat aliquid nesciunt exercitationem blanditiis commodi maiores reiciendis fuga non!</p>
+            </article>
+            </div>
             <div class="big">
                 <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
             </div>

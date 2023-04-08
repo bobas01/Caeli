@@ -12,7 +12,8 @@ $accoloade: 'Neuton', serif;
 $colorBtn: rgb(22, 60, 38, 0.9);
 $colorBorder: #133322;
 
-p {
+p,
+h2 {
     font-family: $txt;
     font-size: 2.5rem;
     background-image: linear-gradient(to right, #ffffff, #d8dde7, #aabfcd, #78a3ad, #4b8785, #4b8785, #4b8785, #4b8785, #78a3ad, #aabfcd, #d8dde7, #ffffff);
@@ -61,15 +62,18 @@ header {
         #spiral {
             position: absolute;
             width: 200px;
-            left: 20%;
-            top: -25%;
+            left: 22%;
+            top: 10%;
             // animation: wave 2s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
             // transform-origin: center;            
             z-index: 100;
         }
-        #fougere, #palmier {
+
+        #fougere,
+        #palmier {
             width: 400px;
         }
+
         #palmier {
             position: absolute;
             right: 0;
@@ -134,7 +138,7 @@ main {
     overflow: auto;
     width: 98%;
     border: 10px solid $colorBorder;
-    margin: 50px auto;
+    margin: 200px auto;
     background-color: $colorBtn;
     justify-content: center;
     align-items: center;
@@ -150,4 +154,115 @@ main {
         color: #ffffff;
 
     }
+}
+
+/*slide2*/
+
+#slide2 {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    .text h2 {
+        font-size: 2.8rem;
+        text-decoration: underline #fff;
+    }
+
+    #btn2 {
+        width: 200px;
+        right: 3%;
+    }
+}
+
+#slide2.active {
+
+    display: block;
+    opacity: 1;
+
+}
+
+
+/*slide 3*/
+#slide3 {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+
+    #table {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 100px ;
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+
+
+            th,
+            td {
+                text-align: left;
+                padding: 8px;
+                font-family: $txt;
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            th:last-child,
+            td:last-child {
+                text-align: center;
+            }
+
+            tr:first-child {
+                font-weight: bold;
+            }
+
+            select {
+                width: 100%;
+                padding: 10px;
+                font-family: $txt;
+                color: #fff;
+                background-color: $colorBtn;
+                border: 3px solid $colorBorder;
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-family: $txt;
+                font-size: 2rem;
+                width: 180px;
+                height: 60px;
+                border: 5px solid $colorBorder;
+                background-color: $colorBtn;
+                color: #fff;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+        }
+
+        #description {
+            width: 35%;
+            overflow: auto;
+        }
+    }
+
+
+
+
+}
+
+#slide3.active2 {
+
+    display: block;
+   
+    opacity: 1;
+
+
 }
