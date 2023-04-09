@@ -200,4 +200,51 @@ main {
 #slide3.active2 {
   display: block;
   opacity: 1;
+}
+
+/*slide4*/
+#slide4 {
+  display: none;
+  position: relative;
+}
+#slide4 #imgSlide4 img:first-child {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 500px;
+}
+#slide4 #imgSlide4 img:last-child {
+  float: right;
+  padding-bottom: 220px;
+}
+#slide4 #pSlide4 p {
+  font-size: 3rem;
+  display: none;
+}
+#slide4 #pSlide4 #p1Slide4 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+#slide4 #pSlide4 #p2Slide4 {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#slide4 #pSlide4 #p3Slide4 {
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+}
+
+#slide4.active3 {
+  display: block;
+  opacity: 1;
+}
+
+/* slide5*/
+#slide5 {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

@@ -53,61 +53,82 @@
         </section>
         <section id="slide3">
             <div id="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Sol</th>
-                        <th>Murs</th>
-                        <th>Plafond</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <tr class="first-line">
-                        <td>Gros œuvres</td>
-                        <td>
-                            <select>
-                                <option value="materials1">Matériaux 1</option>
-                                <option value="materials2">Matériaux 2</option>
-                                <option value="materials3">Matériaux 3</option>
-                                <option value="materials4">Matériaux 4</option>
-                                <option value="materials5">Matériaux 5</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="materials1">Matériaux 1</option>
-                                <option value="materials2">Matériaux 2</option>
-                                <option value="materials3">Matériaux 3</option>
-                                <option value="materials4">Matériaux 4</option>
-                                <option value="materials5">Matériaux 5</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="materials1">Matériaux 1</option>
-                                <option value="materials2">Matériaux 2</option>
-                                <option value="materials3">Matériaux 3</option>
-                                <option value="materials4">Matériaux 4</option>
-                                <option value="materials5">Matériaux 5</option>
-                            </select>
-                        </td>
-                        <td>
-                            <button onclick="displaySecondLine()">Valider</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <article id="description">
-                <h2 id="table-title">Gros œuvres</h2>
-                <p id="table-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit rerum numquam. Consectetur ab quidem natus nisi, quos, sequi, tempora placeat aliquid nesciunt exercitationem blanditiis commodi maiores reiciendis fuga non!</p>
-            </article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Sol</th>
+                            <th>Murs</th>
+                            <th>Plafond</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr class="first-line">
+                            <td>Gros œuvres</td>
+                            <td>
+                                <select>
+                                    <option value="materials1">Matériaux 1</option>
+                                    <option value="materials2">Matériaux 2</option>
+                                    <option value="materials3">Matériaux 3</option>
+                                    <option value="materials4">Matériaux 4</option>
+                                    <option value="materials5">Matériaux 5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="materials1">Matériaux 1</option>
+                                    <option value="materials2">Matériaux 2</option>
+                                    <option value="materials3">Matériaux 3</option>
+                                    <option value="materials4">Matériaux 4</option>
+                                    <option value="materials5">Matériaux 5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="materials1">Matériaux 1</option>
+                                    <option value="materials2">Matériaux 2</option>
+                                    <option value="materials3">Matériaux 3</option>
+                                    <option value="materials4">Matériaux 4</option>
+                                    <option value="materials5">Matériaux 5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button onclick="displaySecondLine()">Valider</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <article id="description">
+                    <h2 id="table-title">Gros œuvres</h2>
+                    <p id="table-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit rerum numquam. Consectetur ab quidem natus nisi, quos, sequi, tempora placeat aliquid nesciunt exercitationem blanditiis commodi maiores reiciendis fuga non!</p>
+                </article>
             </div>
             <div class="big">
                 <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
             </div>
 
+        </section>
+        <section id="slide4">
+            <div id="imgSlide4">
+                <img src="./img/spiral.svg" alt="spiral">
+                <img src="./img/kite.png" alt="cerf-volant">
+            </div>
+            <div id="pSlide4">
+                <p id="p1Slide4">Vous sentez se vent de renouveau?</p>
+                <p id="p2Slide4">Comme un vent d'aire frais...</p>
+                <p id="p3Slide4">...Chez vous</p>
+            </div>
+            <div class="big">
+                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+        </section>
+        <section id="slide5">
+       
+
+
+            <div class="big">
+                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+        </section>
         </section>
     </main>
     <script src="./main.js"></script>
