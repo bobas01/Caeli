@@ -103,7 +103,7 @@ main {
   overflow: auto;
   width: 98%;
   border: 10px solid #133322;
-  margin: 200px auto;
+  margin: 200px auto 0 auto;
   background-color: rgba(22, 60, 38, 0.9);
   justify-content: center;
   align-items: center;
@@ -247,4 +247,60 @@ main {
 /* slide5*/
 #slide5 {
   display: none;
+  height: 1300px;
+}
+#slide5 input[type=range] {
+  width: 80%;
+  margin: 100px auto;
+  display: block;
+  cursor: pointer;
+}
+#slide5 #container {
+  width: 80%;
+  margin: 0 auto;
+}
+#slide5 #container .bigBox {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  width: 100%;
+}
+#slide5 #container .bigBox.hidden {
+  display: none;
+}
+#slide5 #container .bigBox .littleBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+#slide5 #container .bigBox .littleBox img {
+  width: 100px;
+}
+#slide5 #container .bigBox .littleBox p {
+  font-size: 1.5rem;
+  width: 40%;
+}
+#slide5 #btn5 {
+  bottom: 20%;
+  width: 280px;
+}
+#slide5 .big {
+  position: absolute;
+  bottom: 5%;
+  left: 1%;
+}
+
+/*slide6*/
+#slide6 {
+  display: none;
+}
+#slide6 #header {
+  position: relative;
+}
+#slide6 #header > p {
+  transform: rotate(-45deg);
+  width: 250px;
+}
+
+#slide6.active6 {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
