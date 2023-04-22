@@ -8,7 +8,7 @@
 
 p,
 h2 {
-  font-family: "Seaweed Script", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 2.5rem;
   background-image: linear-gradient(to right, #ffffff, #d8dde7, #aabfcd, #78a3ad, #4b8785, #4b8785, #4b8785, #4b8785, #78a3ad, #aabfcd, #d8dde7, #ffffff);
   -webkit-background-clip: text;
@@ -81,14 +81,14 @@ main {
 }
 
 .little {
-  font-family: "Seaweed Script", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 2rem;
-  width: 150px;
+  width: 200px;
   height: 75px;
-  border: 5px solid #133322;
+  border: 2px solid #133322;
   position: absolute;
-  right: 5%;
-  bottom: 55%;
+  right: 10%;
+  bottom: 40%;
   background-color: rgba(22, 60, 38, 0.9);
   color: #fff;
 }
@@ -101,19 +101,31 @@ main {
 
 .big {
   overflow: auto;
-  width: 98%;
-  border: 10px solid #133322;
-  margin: 200px auto 0 auto;
+  width: 80%;
+  border: 2px solid #133322;
+  margin: 200px auto 50px auto;
   background-color: rgba(22, 60, 38, 0.9);
   justify-content: center;
   align-items: center;
   color: #fff;
 }
 .big p {
-  font-family: "Great Vibes", cursive;
-  font-size: 2.5rem;
+  font-family: "Seaweed", cursive;
+  font-size: 2rem;
   padding: 10px 20px 0 20px;
   color: #ffffff;
+}
+.big a {
+  font-family: "Seaweed", cursive;
+  font-size: 2rem;
+  padding: 10px 20px 0 20px;
+  color: #ffffff;
+  float: right;
+}
+
+/*slide1*/
+#slide1 .text p:last-child {
+  text-align: right;
 }
 
 /*slide2*/
@@ -124,12 +136,22 @@ main {
 }
 #slide2 .text h2 {
   font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+#slide2 .text h2 span {
   -webkit-text-decoration: underline #fff;
           text-decoration: underline #fff;
 }
+#slide2 .text ul {
+  font-family: "Seaweed", cursive;
+  font-size: 2rem;
+  padding: 10px 20px 0 20px;
+  color: #ffffff;
+  list-style-type: square;
+}
 #slide2 #btn2 {
-  width: 200px;
-  right: 3%;
+  width: 300px;
+  bottom: 35%;
 }
 
 #slide2.active {
@@ -145,21 +167,27 @@ main {
 }
 #slide3 #table {
   display: flex;
-  justify-content: space-evenly;
   padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
 }
 #slide3 #table table {
   border-collapse: collapse;
-  width: 50%;
+  width: 60%;
   margin-bottom: 20px;
+  min-width: 1000px;
 }
 #slide3 #table table th,
 #slide3 #table table td {
   text-align: left;
   padding: 8px;
-  font-family: "Seaweed Script", cursive;
+  font-family: "Lato", sans-serif;
   color: #fff;
   font-size: 2rem;
+}
+#slide3 #table table th {
+  text-transform: uppercase;
+  text-align: center;
 }
 #slide3 #table table th:last-child,
 #slide3 #table table td:last-child {
@@ -171,18 +199,18 @@ main {
 #slide3 #table table select {
   width: 100%;
   padding: 10px;
-  font-family: "Seaweed Script", cursive;
-  color: #fff;
-  background-color: rgba(22, 60, 38, 0.9);
+  font-family: "Lato", sans-serif;
+  color: rgba(22, 60, 38, 0.9);
+  background-color: #fff;
   border: 3px solid #133322;
   font-size: 1.5rem;
 }
 #slide3 #table table button {
-  font-family: "Seaweed Script", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 2rem;
   width: 180px;
   height: 60px;
-  border: 5px solid #133322;
+  border: 2px solid #133322;
   background-color: rgba(22, 60, 38, 0.9);
   color: #fff;
 }
@@ -195,6 +223,10 @@ main {
 #slide3 #table #description {
   width: 35%;
   overflow: auto;
+  margin-left: 50px;
+}
+#slide3 #table #description h2 {
+  padding-bottom: 30px;
 }
 
 #slide3.active2 {
@@ -202,6 +234,16 @@ main {
   opacity: 1;
 }
 
+@media screen and (max-width: 1500px) {
+  #slide3 #table {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #slide3 #table #description {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
 /*slide4*/
 #slide4 {
   display: none;
@@ -212,6 +254,16 @@ main {
   top: -10%;
   left: -10%;
   width: 500px;
+  animation: rotate infinite 10s linear;
+  transform-origin: center;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 #slide4 #imgSlide4 img:last-child {
   float: right;
@@ -220,10 +272,11 @@ main {
 #slide4 #pSlide4 p {
   font-size: 3rem;
   display: none;
+  font-family: "Seaweed", cursive;
 }
 #slide4 #pSlide4 #p1Slide4 {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 5%;
   transform: translateY(-50%);
 }
@@ -236,7 +289,7 @@ main {
 #slide4 #pSlide4 #p3Slide4 {
   position: absolute;
   bottom: 25%;
-  right: 25%;
+  right: 20%;
 }
 
 #slide4.active3 {
@@ -244,6 +297,23 @@ main {
   opacity: 1;
 }
 
+@media screen and (max-width: 1300px) {
+  #slide4 #pSlide4 p {
+    font-size: 2rem;
+  }
+  #slide4 #pSlide4 #p1Slide4 {
+    top: 40%;
+    left: 5%;
+  }
+  #slide4 #pSlide4 #p2Slide4 {
+    bottom: 45%;
+    left: 50%;
+  }
+  #slide4 #pSlide4 #p3Slide4 {
+    bottom: 30%;
+    right: 20%;
+  }
+}
 /* slide5*/
 #slide5 {
   display: none;
@@ -271,6 +341,7 @@ main {
 #slide5 #container .bigBox .littleBox {
   display: flex;
   justify-content: space-evenly;
+  width: 50%;
 }
 #slide5 #container .bigBox .littleBox img {
   width: 100px;
@@ -281,12 +352,7 @@ main {
 }
 #slide5 #btn5 {
   bottom: 20%;
-  width: 280px;
-}
-#slide5 .big {
-  position: absolute;
-  bottom: 5%;
-  left: 1%;
+  width: 350px;
 }
 
 /*slide6*/
@@ -297,8 +363,31 @@ main {
   position: relative;
 }
 #slide6 #header > p {
-  transform: rotate(-45deg);
-  width: 250px;
+  text-align: center;
+  padding-top: 100px;
+}
+#slide6 #header img {
+  width: 400px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+#slide6 #central {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px;
+}
+#slide6 #central img, #slide6 #central p {
+  width: 40%;
+}
+#slide6 #btn #btn6 {
+  left: 10%;
+  bottom: 12%;
+  width: 500px;
+}
+#slide6 #btn #btn7 {
+  bottom: 12%;
+  width: 500px;
 }
 
 #slide6.active6 {

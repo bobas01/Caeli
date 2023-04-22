@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Seaweed+Script&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <video src="https://video.wixstatic.com/video/c837a6_53b2916af80c46c3a162cacf484f4e30/1080p/mp4/file.mp4" autoplay muted loop></video>
+        <video src="https://video.wixstatic.com/video/c837a6_53b2916af80c46c3a162cacf484f4e30/1080p/mp4/file.mp4"
+            autoplay muted loop></video>
         <div class="wave">
             <img id="spiral" src="./img/spiral.svg" alt="spiral">
             <img src="./img/fougere.png" alt="fougère" id="fougere">
@@ -33,21 +38,29 @@
                 Par ici!
             </button>
             <div class="big">
-                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+                <p>&lt;&lt; Nous passons 90% de notre temps à l’intérieur des bâtiments, soit près de 22h/ jour !
+                    &gt;&gt;</p>
+                <a href="https://www.santepubliquefrance.fr/">santépubliquefrance.fr</a>
             </div>
 
         </section>
         <section id="slide2">
             <div class="text">
-                <h2>Fonctionnement</h2>
-                <p>Ceci est un texte expliquant comment cela fonctionne et ce qu’il va devoir faire pour blablabla Ceci est un texte expliquant comment cela fonctionne et ce qu’il va devoir faire pour blablabla</p>
+                <h2>Fonctionnement <span>en 3 étapes :</span> </h2>
+                <ul>
+                    <li> Renseigner les matériaux de votre habitat ou de votre pièce à rénover</li>
+                    <li>Bénéficier des conseils liés à ces matériaux</li>
+                    <li>Rencontrer les experts !</li>
+                </ul>
+               
 
             </div>
             <button class="little" id="btn2" type="button">
                 Bien compris!
             </button>
             <div class="big">
-                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+                <p>&lt;&lt; L’air intérieur est jusqu’à 10 fois plus pollué que l’air extérieur ! &gt;&gt;</p>
+                    <a href="https://www.santepubliquefrance.fr/">santépubliquefrance.fr</a>
             </div>
 
         </section>
@@ -65,32 +78,32 @@
                     </thead>
                     <tbody id="table-body">
                         <tr class="first-line">
-                            <td>Gros œuvres</td>
+                            <td style="text-transform:uppercase;">Gros-œuvre</td>
                             <td>
                                 <select>
-                                    <option value="materials1">Matériaux 1</option>
-                                    <option value="materials2">Matériaux 2</option>
-                                    <option value="materials3">Matériaux 3</option>
-                                    <option value="materials4">Matériaux 4</option>
-                                    <option value="materials5">Matériaux 5</option>
+                                    <option value="materials1">Béton</option>
+                                    <option value="materials2">Bois</option>
+                                    <option value="materials3">Brique</option>
+                                    <option value="materials4">MPisé</option>
+                                    <option value="materials5">Pierre</option>
                                 </select>
                             </td>
                             <td>
                                 <select>
-                                    <option value="materials1">Matériaux 1</option>
-                                    <option value="materials2">Matériaux 2</option>
-                                    <option value="materials3">Matériaux 3</option>
-                                    <option value="materials4">Matériaux 4</option>
-                                    <option value="materials5">Matériaux 5</option>
+                                    <option value="materials1">Béton</option>
+                                    <option value="materials2">Bois</option>
+                                    <option value="materials3">Brique</option>
+                                    <option value="materials4">Pisé</option>
+                                    <option value="materials5">Pierre</option>
                                 </select>
                             </td>
                             <td>
                                 <select>
-                                    <option value="materials1">Matériaux 1</option>
-                                    <option value="materials2">Matériaux 2</option>
-                                    <option value="materials3">Matériaux 3</option>
-                                    <option value="materials4">Matériaux 4</option>
-                                    <option value="materials5">Matériaux 5</option>
+                                    <option value="materials1">Béton</option>
+                                    <option value="materials2">Bois</option>
+                                    <option value="materials3">Brique</option>
+                                    <option value="materials4">MPisé</option>
+                                    <option value="materials5">Pierre</option>
                                 </select>
                             </td>
                             <td>
@@ -100,12 +113,14 @@
                     </tbody>
                 </table>
                 <article id="description">
-                    <h2 id="table-title">Gros œuvres</h2>
-                    <p id="table-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit rerum numquam. Consectetur ab quidem natus nisi, quos, sequi, tempora placeat aliquid nesciunt exercitationem blanditiis commodi maiores reiciendis fuga non!</p>
+                    <h2 id="table-title">Gros-œuvre</h2>
+                    <p id="table-text">Il représente les matériaux structurels de votre bâtisse.
+                         S’il en existe en commun pour plusieurs zones, répétés les sur les différents choix !</p>
                 </article>
             </div>
             <div class="big">
-                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+                <p>&lt;&lt; Nous respirons 22.000 fois par jour soit 300.000.000 de litres d’air consommés sur toute une vie ! &gt;&gt;</p>
+                <a href="https://www.https://www.liguepulmonaire.ch/fr/page-daccueil.html/fr/page-daccueil.html">liguepulmonaire.chl</a>
             </div>
 
         </section>
@@ -120,48 +135,50 @@
                 <p id="p3Slide4">...Chez vous</p>
             </div>
             <div class="big">
-                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+                <p>&lt;&lt; 80m2, c’est la surface moyenne de nos poumons : l’équivalent d’un tiers de terrain de tennis ! &gt;&gt;</p>
         </section>
         <section id="slide5">
             <input type="range" min="0" max="100" value="0" step="1" list="tickmarks" onchange="createDivs()">
             <datalist id="tickmarks">
-                <option value="0"></option>
+                <option value="0">Le plus important suffira</option>
                 <option value="25"></option>
                 <option value="50"></option>
                 <option value="75"></option>
-                <option value="100"></option>
+                <option value="100">Jeceux tout savoir</option>
             </datalist>
             <div id="container"></div>
             <button class="little" id="btn5" type="button">
                 Pleine respiration!
             </button>
-            <div class="big">
-                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
-            </div>
+          
         </section>
         <section id="slide6">
             <div id="header">
-                <p>Les vrais experts,  ce sont eux !</p>
-                <img src="./img/spiralArrow.svg" alt="fleche" id="arraw">
+                <p>Les vrais experts, ce sont eux !</p>
+                
                 <img src="./img/Logo.png" alt="logo">
-        </div>
-        <div id="central">
-            <img src="./img/dirrigeants.png" alt="dirrigeant de caeli">
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as by accident, sometimes on purpose (injected humour and the like).
-</p>
-        </div>
-            
+            </div>
+            <div id="central">
+                <img src="./img/dirrigeants.png" alt="dirrigeant de caeli">
+                <p>Estelle BEZON-ROUSSELET et Jean-Baptiste FAESSEL sont à l’origine de ce projet pour initier la prise de conscience 
+                    générale sur l’importance de la qualité de l’air dans les bâtiments. Nous traversons une période de transition 
+                    écologique, énergétique et sociétale nous poussant à rénover nos bâtisses, alors prenons soin de nous par la même 
+                    occasion !
+                </p>
+            </div>
+
             <div id="btn">
-            <button class="little" id="btn6" type="button">
-                On retente l'expérience?
-            </button>
-            <button class="little" id="btn7" type="button" onclick="window.location.href = 'https://caeli-environnement.fr';">
-                Aller plus loin!
-            </button>
-        </div>
+               <button class="little" id="btn6" type="button" onclick="location.reload()">
+                   On retente l'expérience? 
+                </button>
+                <button class="little" id="btn7" type="button"
+                    onclick="window.location.href = 'https://caeli-environnement.fr';">
+                    Aller plus loin!
+                </button>
+            </div>
 
             <div class="big">
-                <p>&lt;&lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae magnam, debitis facilis maxime fugiat minima, praesentium laudantium rem eveniet, eius error repellat. Dolorum doloribus veritatis blanditiis animi est ipsa quaerat nihil ex impedit rem cumque dolorem accusantium, mollitia pariatur. &gt;&gt;</p>
+                <p>&lt;&lt; Ce serait gonfler de dire qu’ils ne manquent pas d’air ! &gt;&gt;</p>
             </div>
         </section>
     </main>
