@@ -175,7 +175,7 @@ main {
   border-collapse: collapse;
   width: 60%;
   margin-bottom: 20px;
-  min-width: 1000px;
+  min-width: 850px;
 }
 #slide3 #table table th,
 #slide3 #table table td {
@@ -234,7 +234,7 @@ main {
   opacity: 1;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   #slide3 #table {
     display: flex;
     flex-wrap: wrap;
@@ -332,6 +332,7 @@ main {
   background-size: 100% 100%;
   box-sizing: content-box;
   position: relative;
+  height: 30px;
 }
 #slide5 input[type=range]::before {
   content: "Le plus important suffira.";
@@ -352,7 +353,7 @@ main {
   width: 50px;
   height: 50px;
   border: 2px solid #A7A7A7;
-  border-radius: 25px;
+  border-radius: 15px;
   background: rgb(237, 125, 49);
 }
 #slide5 input[type=range]::-webkit-slider-thumb:before {
@@ -404,7 +405,7 @@ main {
   padding-top: 100px;
 }
 #slide6 #header img {
-  width: 400px;
+  width: 300px;
   position: absolute;
   right: 50px;
   top: 20px;
@@ -412,21 +413,35 @@ main {
 #slide6 #central {
   display: flex;
   justify-content: space-evenly;
-  margin: 100px;
+  margin: 100px 0;
 }
-#slide6 #central img, #slide6 #central p {
+#slide6 #central img {
+  height: auto;
+  width: auto;
+}
+#slide6 #central p {
+  font-size: 1.8rem;
   width: 40%;
+}
+#slide6 #btn #btn6, #slide6 #btn #btn7 {
+  bottom: 15%;
+  width: 500px;
 }
 #slide6 #btn #btn6 {
   left: 10%;
-  bottom: 12%;
-  width: 500px;
 }
 #slide6 #btn #btn7 {
-  bottom: 12%;
-  width: 500px;
+  right: 10%;
 }
 
 #slide6.active6 {
   display: block;
+}
+
+@media screen and (max-width: 1300px) {
+  #slide6 #btn #btn6, #slide6 #btn #btn7 {
+    font-size: 1.5rem;
+    width: 400px;
+    bottom: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */
