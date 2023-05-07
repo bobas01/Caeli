@@ -110,17 +110,20 @@ main {
   color: #fff;
 }
 .big p {
-  font-family: "Seaweed", cursive;
-  font-size: 2rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
   padding: 10px 20px 0 20px;
   color: #ffffff;
+  text-align: center;
 }
 .big a {
-  font-family: "Seaweed", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 2rem;
   padding: 10px 20px 0 20px;
   color: #ffffff;
   float: right;
+  text-decoration: none;
+  font-style: italic;
 }
 
 /*slide1*/
@@ -143,7 +146,7 @@ main {
           text-decoration: underline #fff;
 }
 #slide2 .text ul {
-  font-family: "Seaweed", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 2rem;
   padding: 10px 20px 0 20px;
   color: #ffffff;
@@ -272,7 +275,7 @@ main {
 #slide4 #pSlide4 p {
   font-size: 3rem;
   display: none;
-  font-family: "Seaweed", cursive;
+  font-family: "Lato", sans-serif;
 }
 #slide4 #pSlide4 #p1Slide4 {
   position: absolute;
@@ -335,15 +338,19 @@ main {
   height: 30px;
 }
 #slide5 input[type=range]::before {
-  content: "Le plus important suffira.";
+  content: "Le plus important suffira, merci !";
   left: 0;
+  width: 392px;
 }
 #slide5 input[type=range]::after {
-  content: "Je veux tous savoir";
+  content: "Je veux tous  savoir !";
   right: 0;
+  width: 272px;
 }
 #slide5 input[type=range]::after, #slide5 input[type=range]::before {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 900;
   font-family: "Lato", sans-serif;
   position: absolute;
   top: 165%;
@@ -388,8 +395,11 @@ main {
   font-size: 1.5rem;
   width: 40%;
 }
+#slide5 #container .bigBox:last-child {
+  padding-bottom: 200px;
+}
 #slide5 #btn5 {
-  bottom: 20%;
+  bottom: -9%;
   width: 350px;
 }
 
@@ -405,7 +415,7 @@ main {
   padding-top: 100px;
 }
 #slide6 #header img {
-  width: 300px;
+  width: 400px;
   position: absolute;
   right: 50px;
   top: 20px;

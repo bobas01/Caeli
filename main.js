@@ -32,7 +32,7 @@ function displaySecondLine() {
   const secondLine = document.createElement("tr");
   secondLine.className = "second-line";
   secondLine.innerHTML = `
-      <td style="text-transform:uppercase;">Second-œuvre</td>
+      <td style="text-transform:uppercase; font-weight:bold;">Second-œuvre</td>
       <td>
       <select>
           <option value="materials1">Liège</option>
@@ -93,16 +93,16 @@ function displayThirdLine() {
   const thirdLine = document.createElement("tr");
   thirdLine.className = "third-line";
   thirdLine.innerHTML = `
-      <td style="text-transform:uppercase;">Finitions</td>
+      <td style="text-transform:uppercase; font-weight:bold;">Finitions</td>
       <td>
       <select>
           <option value="materials1">Plâtre</option>
           <option value="materials2">Peinture</option>
           <<option value="materials3">Papier peint</option>
-          <option value="materials4">Vynile</option>
+          <option value="materials4">Vinyle</option>
           <option value="materials5">PVC</option>
           <option value="materials6">Parquet</option>
-          <option value="materials7">Carlage</option>
+          <option value="materials7">Carrelage</option>
           <option value="materials8">Stratifié</option>
           <option value="materials9">Moquette</option>
           <option value="materials10">Enduit</option>
@@ -116,7 +116,7 @@ function displayThirdLine() {
           <option value="materials4">Vynil</option>
           <option value="materials5">PVC</option>
           <option value="materials6">Parquet</option>
-          <option value="materials7">Carlage</option>
+          <option value="materials7">Carrelage</option>
           <option value="materials8">Stratifié</option>
           <option value="materials9">Moquette</option>
           <option value="materials10">Enduit</option>
@@ -130,7 +130,7 @@ function displayThirdLine() {
           <option value="materials4">Vynil</option>
           <option value="materials5">PVC</option>
           <option value="materials6">Parquet</option>
-          <option value="materials7">Carlage</option>
+          <option value="materials7">Carrelage</option>
           <option value="materials8">Stratifié</option>
           <option value="materials9">Moquette</option>
           <option value="materials10">Enduit</option>
@@ -148,7 +148,7 @@ function displayThirdLine() {
   const tableText = document.getElementById("table-text");
 
   tableTitle.innerText = "Finitions";
-  tableText.innerText = "Elles sont tous les matériaux que vous pouvez voir avec vos yeux et qui permettent de peaufiner le rendu de votre pièce. De même ici, renseignez les prédominants !";
+  tableText.innerText = "Elles représentent tous les matériaux que vous pouvez directement apprécier avec vos yeux et qui permettent de peaufiner le rendu de votre pièce. De même ici, renseignez les prédominants !";
   btn3 = document.getElementById('btn3');
   header = document.querySelector('header');
   p1 = document.getElementById('p1Slide4');
@@ -225,41 +225,42 @@ function createDivs() {
       let littleBox1Text;
       switch (i+j) {
         case 0:
-          littleBox1Text = "Attention, il faut changer les matériaux.";
+          
           break;
         case 25:
-          littleBox1Text = "Achète ceci pour améliorer ta performance.";
+          littleBox1Text = "Les peintures sont composées d’une multitude de produits d’ajouts, parfois nocifs pour la santé";
           break;
-        case 50:
-          littleBox1Text = "N'oublie pas de prendre une pause.";
+        case 50:  
+          littleBox1Text = "Les colles pour sols PVC, Vinyle peuvent relâcher des COV de la famille des Cyclohexane, Toluènes ou Trichloroéthylènes";
           break;
         case 75:
-          littleBox1Text = "Oh mon dieu, c'est pas bien.";
+          littleBox1Text = "Les isolants relâchent de grandes quantités de COV tout au long de leurs cycles de vie, notamment avec la variation de chaleur et d’humidité";
           break;
         case 100:
-          littleBox1Text = "Fais ça et ça sera très bien.";
+          littleBox1Text = "En contact avec l’air, la sève du bois peu produire au fil du temps des COV de la catégorie des aldéhydes";
           break;
       }
       littleBox1.innerHTML = `<img src="./img/alarm.svg" alt="alarm"><p>${littleBox1Text}</p>`;
 
       const littleBox2 = document.createElement("div");
+      
       littleBox2.classList.add("littleBox");
       let littleBox2Text;
       switch (i+j) {
         case 0:
-          littleBox2Text = "Achète ceci pour réduire les coûts.";
+        
           break;
         case 25:
-          littleBox2Text = "N'oublie pas de te reposer.";
+          littleBox2Text = "Privilégier les peintures ayant une notation A+, A sur l’étiquetage des COV, porter un masque durant son application et n’investissez la pièce que plusieurs jours après avoir terminé de peindre !";
           break;
         case 50:
-          littleBox2Text = "Oh mon dieu, c'est incroyable.";
+          littleBox2Text = "Si vous désirez poser un sol à coller, ce produit est important à choisir ! Il est aussi soumis à l’étiquetage obligatoire des COV, alors privilégier du A+ ";
           break;
         case 75:
-          littleBox2Text = "Fais ça pour obtenir de meilleurs résultats.";
+          littleBox2Text = "Couvrez les par du doublage ou cloisonnement, il n’est jamais très sain de laisser de l’isolant en contact avec l’air que nous respirons.Pour le choix, l’étiquetage COV est de mise !";
           break;
         case 100:
-          littleBox2Text = "Attention, ne fais pas ça !";
+          littleBox2Text = "Retirez régulièrement les coulures de sève à l’aide d’un chiffon ou pinceau humidifié à l’essence de térébenthine et huile de lin. Sinon, recouvrez le bois d’un doublage.";
           break;
       }
       littleBox2.innerHTML = `<img src="./img/pouceVert.svg" alt="pouce vert"><p>${littleBox2Text}</p>`;
